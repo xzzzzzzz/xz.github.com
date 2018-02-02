@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="tips.js"></script>
+	<script>
+	window.onload=function(){
+		showTips(".btn",{  
+		    content:"../static/img/loading_icon.gif",  
+		    boxDomStyle:{  
+		        opacity:".9"  
+		    },  
+		    imgDomStyle:{  
+		        opacity:".8"  
+		    },  
+		    open:function(){  
+		        console.log("show");  
+		    },  
+		    close:function(){  
+		        console.log("close");  
+		    }  
+		});
+	}
+		
+	</script>
+</head>
+<body>
+	<div  class="btn"> 点我  的的的电动机</div>
+</body>
+</html>
